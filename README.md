@@ -6,7 +6,7 @@ Esta seção documenta os passos iniciais do projeto, estabelecendo a proteína 
 
 O projeto tem como foco o estudo estrutural e evolutivo da seguinte enzima ligada aos processos de memória:
 
-* **Proteína:** Proteína quinase C tipo zeta (PKM$\zeta$)
+* **Proteína:** Proteína quinase C tipo zeta (PKMζ)
 * **Gene:** *prkcz*
 * **Isoforma:** 5
 * **Número de acesso (NCBI):** NM_001429423.1 (mRNA) / NP_001416352.1 (Proteína)
@@ -23,8 +23,6 @@ Para a execução das etapas de bioinformática, foi realizada uma revisão prá
 
 ## 🧬 Busca de Ortólogos (Ferramenta OASIS)
 
-A etapa final da semana consistiu no levantamento evolutivo da sequência alvo.
+Utilizando a ferramenta **[OASIS](https://github.com/RodrigoOrvate/OASIS)**, desenvolvida e documentada em repositório próprio, a sequência da proteína de referência (NP_001416352.1) foi submetida a uma busca ativa por ortólogos em diversas espécies. O processo resultou na compilação de um arquivo `.fasta` curado, contendo as sequências ortólogas validadas. 
 
-Utilizando a ferramenta **OASIS**, a sequência da proteína de referência (NP_001416352.1) foi submetida a uma busca ativa por ortólogos em diversas espécies. O processo resultou na compilação de um arquivo `.fasta` curado, contendo as sequências ortólogas validadas. 
-
-Este arquivo formou o banco de dados restrito utilizado nas etapas subsequentes para a validação cruzada (BLAST reverso) dos fragmentos genômicos obtidos na montagem *de novo*, garantindo que apenas sequências com parentesco evolutivo direto com a PKM$\zeta$ fossem isoladas para modelagem 3D.
+Este arquivo formou o banco de dados restrito utilizado nas etapas subsequentes para a validação cruzada (BLAST reverso) dos fragmentos genômicos obtidos na montagem *de novo*, garantindo que apenas sequências com parentesco evolutivo direto com a PKMζ fossem isoladas para modelagem 3D.
